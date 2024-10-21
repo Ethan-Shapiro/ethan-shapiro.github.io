@@ -34,13 +34,17 @@ The outcome is an ensemble model based on weighted MAPE. At the time of my predi
 
 ---
 
-### Fantasy League of Legends
+### Soft Decision Trees
 [Project 3 Title](http://example.com/)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
+[![Open Code](https://img.shields.io/badge/Jupyter-Open_Files-red?logo=Jupyter)](https://github.com/m-carini/m-carini.github.io/tree/main/netflix)
+[![Open Website](https://img.shields.io/badge/Website-8A2BE2)](https://github.com/m-carini/m-carini.github.io/tree/main/netflix)
+[![Open Paper](https://img.shields.io/badge/PPT-View_Slides-red?logo=microsoftpowerpoint)](docs/Netflix_Presentation_Notes.pptx)
+
 ---
 
-### Reinforcemtn Learning Wordle Agent
+### Fantasy League of Legends
 [Project 3 Title](http://example.com/)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
