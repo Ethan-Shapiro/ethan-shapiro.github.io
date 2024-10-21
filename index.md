@@ -38,9 +38,9 @@ The outcome is an ensemble model based on weighted MAPE. At the time of my predi
 [Project 3 Title](http://example.com/)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
-[![Open Code](https://img.shields.io/badge/Jupyter-Open_Files-red?logo=Jupyter)](https://github.com/m-carini/m-carini.github.io/tree/main/netflix)
-[![Open Website](https://img.shields.io/badge/Website-8A2BE2)](https://github.com/m-carini/m-carini.github.io/tree/main/netflix)
-[![Open Paper](https://img.shields.io/badge/PPT-View_Slides-red?logo=microsoftpowerpoint)](docs/Netflix_Presentation_Notes.pptx)
+[![Open Code](https://img.shields.io/badge/Jupyter-Open_Files-red?logo=github)](https://github.com/m-carini/m-carini.github.io/tree/main/netflix)
+[![Open Website](https://img.shields.io/badge/Website-Open_Link-2138EB)](https://ethan-shapiro.github.io/Soft-Decision-Tree-Feature-Learning/)
+[![Open Paper](https://img.shields.io/badge/Research_Paper-View_Paper-green?logo=googledrive)](https://drive.google.com/file/d/1JX0qreDo9ni1c6ET5OXIEipF0WAP-Xel/view)
 
 ---
 
