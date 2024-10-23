@@ -48,8 +48,6 @@ We tested our approach using datasets like MNIST and CelebA, demonstrating that 
 Our findings highlight the potential of SDTs to combine the flexibility of neural networks with the transparency of decision trees, improving overall accuracy in both regards. By making decision-making processes clearer, SDTs are promising for applications requiring interpretable AI, such as medical diagnoses or financial models. 
 
 <img src="images/SDT_Example.png?raw=true"/>
-<img src="images/SDT_Paper.png?raw=true"/>
-<img src="images/SDT_Website.png?raw=true"/>
 
 ***Technical Knowledge:*** Transformer Networks, Neural Networks, Data Cleaning, Feature Engineering
 
