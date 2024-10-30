@@ -6,11 +6,11 @@
 
 **Project overview:** As someone who has consistently struggled to make it past Diamond despite playing League of Legends for multiple years, I think it's time to see if I can get a leg up on the enemy team. One of the major ways to easily lose the game before it starts is to draft a bad team composition. If you're unfamiliar with League of Legends, it's essentially a game where two teams of 5 face off against each other with the objective of breaking into the other teams home and destroying it. I might have made it sounds worse than it actually is... In any case, before the game actually starts each team gets to choose 5 characters out of over 160 and ban (not allow) the enemy team to choose 5. In total, that's 10 chosen champions with 10 banned champions, leaving over 150 champions to choose from (that's over 590 million different combinations of teams!) With so many choices, it's hard to always pick the right 5 in order to beat the enemy. This is where my model comes in.
 
-Based off of previous 2022 paper called ![DraftRec]([url](https://arxiv.org/pdf/2204.12750)), I've rewritten the model updating all previous code as well as collected new data taking almost 6 months of time and over 50GB of space. 
+Based off of previous 2022 paper called [DraftRec]([url](https://arxiv.org/pdf/2204.12750)), I've rewritten the model updating all previous code as well as collected new data taking almost 6 months of time and over 50GB of space. 
 
 The outcome will be a new recommender system that takes into account enemy team's skill in addition to what it already accounts for. At the current time I'm training the DraftRec model to get baselines and will be enhancing the model after.
 
-<img src="images/Champ_Reco_league_Example?raw=true"/>
+<img src="images/Champ_Reco_league_Example.png?raw=true"/>
 <img src="images/Draft Rec Model.png?raw=true"/>
 
 ***Technical Knowledge:*** Transformer Networks, Neural Networks, Data Cleaning, Feature Engineering
