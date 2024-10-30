@@ -22,9 +22,9 @@ The outcome will be a new recommender system that takes into account enemy team'
 
 ---
 ### Steam Review Sentiment Analysis (Big Data)
-**Project overview:** In this project, I worked with a **40GB+ Steam reviews dataset** to sharpen my big data and NLP skills using **PySpark**. The primary focus was on practicing essential PySpark concepts like **partitioning, groupbys, joins, and efficient computation** techniques to handle large-scale data. I aimed to optimize calculations and improve processing speed, gaining valuable experience in managing big datasets.
+**Project overview:** In this project, I worked with a 35GB Steam reviews dataset to sharpen my big data and NLP skills using PySpark. The primary focus was on practicing essential PySpark concepts like partitioning, groupbys, joins, and efficient computation techniques to handle large-scale data. I aimed to optimize calculations and improve processing speed, gaining valuable experience in managing big datasets.
 
-I also explored natural language processing using **PySpark NLP** and **John Snow Labs' NLP library**. This involved cleaning the review data, performing **entity recognition** using pre-trained models, and conducting **unsupervised sentiment analysis using TextBlob and clustering**. These tasks helped me practice working with complex text data and extracting meaningful insights from unstructured reviews.
+I also explored natural language processing using PySpark NLP and John Snow Labs' NLP library. This involved cleaning the review data, performing entity recognition using pre-trained models, and conducting unsupervised sentiment analysis using TextBlob and clustering. These tasks helped me practice working with complex text data and extracting meaningful insights from unstructured reviews.
 
 One of the main challenges I encountered was setting up PySpark locally due to compatibility issues with various package versions. After overcoming these versioning hurdles, I successfully ran the analysis and achieved my goal of applying both big data techniques and NLP in a real-world context. 
 <img src="images/Steam_Pos_Word_Cloud.png?raw=true"/>
