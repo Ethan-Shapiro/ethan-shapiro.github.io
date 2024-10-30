@@ -33,6 +33,7 @@ One of the main challenges I encountered was setting up PySpark locally due to c
 **Technical Knowledge:** Big Data Processing, Natural Language Processing (NLP), Entity Recognition, Sentiment Analysis
 
 **Tools:** Python, PySpark, PySpark NLP, John Snow Labs NLP, Steam Reviews Dataset (40GB)
+[![Open Code](https://img.shields.io/badge/Jupyter-Open_Files-red?logo=github)](https://github.com/Ethan-Shapiro/SteamReviewSentiment)
 
 ---
 
