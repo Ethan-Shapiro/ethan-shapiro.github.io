@@ -11,6 +11,7 @@ Based off of previous 2022 paper called ![DraftRec]([url](https://arxiv.org/pdf/
 The outcome will be a new recommender system that takes into account enemy team's skill in addition to what it already accounts for. At the current time I'm training the DraftRec model to get baselines and will be enhancing the model after.
 
 <img src="images/Champ_Reco_league_Example?raw=true"/>
+<img src="images/Draft Rec Model.png?raw=true"/>
 
 ***Technical Knowledge:*** Transformer Networks, Neural Networks, Data Cleaning, Feature Engineering
 
