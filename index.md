@@ -10,8 +10,7 @@ Based off of previous 2022 paper called ![DraftRec]([url](https://arxiv.org/pdf/
 
 The outcome will be a new recommender system that takes into account enemy team's skill in addition to what it already accounts for. At the current time I'm training the DraftRec model to get baselines and will be enhancing the model after.
 
-<img src="images/netflix_img.png?raw=true"/>
-<img src="images/netflix_img2.png?raw=true"/>
+<img src="images/Champ_Reco_league_Example?raw=true"/>
 
 ***Technical Knowledge:*** Transformer Networks, Neural Networks, Data Cleaning, Feature Engineering
 
@@ -27,7 +26,8 @@ The outcome will be a new recommender system that takes into account enemy team'
 I also explored natural language processing using **PySpark NLP** and **John Snow Labs' NLP library**. This involved cleaning the review data, performing **entity recognition** using pre-trained models, and conducting **unsupervised sentiment analysis using TextBlob and clustering**. These tasks helped me practice working with complex text data and extracting meaningful insights from unstructured reviews.
 
 One of the main challenges I encountered was setting up PySpark locally due to compatibility issues with various package versions. After overcoming these versioning hurdles, I successfully ran the analysis and achieved my goal of applying both big data techniques and NLP in a real-world context. 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/Steam_Pos_Word_Cloud.png?raw=true"/>
+<img src="images/Steam_Reviews_Hist.png?raw=true"/>
 
 **Technical Knowledge:** Big Data Processing, Natural Language Processing (NLP), Entity Recognition, Sentiment Analysis
 
@@ -63,18 +63,6 @@ For the prediction model, I collected data from the **RIOT API** and trained a *
 **Technical Knowledge:** Data Collection (RIOT API), Machine Learning, API Development, Frontend/Backend Development
 
 **Tools:** Python, PyTorch, AWS Lambda, Firebase, Next.JS, Go, Cypress, PyTest, Google Cloud Run
-
----
-### Flight Delay Prediction (Big Data)
-
-**Project overview:** In my Art of Forecasting course at UCI, we were assigned a Fortune 500 company and tasked to forecast their stock price on December 31st, 2021. I was assigned Netflix as my company.
-
-The dataset I created included historic stock prices, historic Netflix subscribers, market index values, and competitor stock values all on a monthly basis. From there I created an ARIMA model and an ETS model based on historic stock prices. Next, I created a linear regression model using lagged index and competitor stock values. I investigated various timeframes for lagging and picked the one with the best MAPE. In doing that, I found the lagged DirecTV stock value fit a near perfect negative line (image below). The final linear model performed at 0.869 R-squared. Lastly, I created a rolling 12-month average model, where I again studied various rolling values and 12 gave the best MAPE.  
-
-The outcome is an ensemble model based on weighted MAPE. At the time of my prediction, Netflix stock was trading at $553.41. From my model, I predicted the stock value to increase 33.22% to $690.11
-
-<img src="images/netflix_img.png?raw=true"/>
-<img src="images/netflix_img2.png?raw=true"/>
 
 ---
 
