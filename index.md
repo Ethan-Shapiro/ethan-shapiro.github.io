@@ -4,11 +4,22 @@
 
 ### League of Legends Champion Recommendation Engine
 
-**Project overview:** As someone who has consistently struggled to make it past Diamond despite playing League of Legends for multiple years, I think it's time to see if I can get a leg up on the enemy team. One of the major ways to easily lose the game before it starts is to draft a bad team composition. If you're unfamiliar with League of Legends, it's essentially a game where two teams of 5 face off against each other with the objective of breaking into the other teams home and destroying it. I might have made it sounds worse than it actually is... In any case, before the game actually starts each team gets to choose 5 characters out of over 160 and ban (not allow) the enemy team to choose 5. In total, that's 10 chosen champions with 10 banned champions, leaving over 150 champions to choose from (that's over 590 million different combinations of teams!) With so many choices, it's hard to always pick the right 5 in order to beat the enemy. This is where my model comes in.
+**Project overview:** As someone who has consistently struggled to make it past Diamond despite playing League of Legends for multiple years, I think it's time to see if I can get a leg up on the enemy team. One of the major ways to easily lose the game before it starts is to draft a bad team composition. If you're unfamiliar with League of Legends, it's essentially a game where two teams of 5 face off against each other with the objective of breaking into the other teams home and destroying it. I might have made it sound worse than it actually is... In any case, before the game actually starts each team gets to choose 5 characters out of over 160 and ban (not allow) the enemy team to choose 5. In total, that's 10 chosen champions with 10 banned champions, leaving over 150 champions to choose from (that's over 590 million different combinations of teams!) With so many choices, it's hard to always pick the right 5 in order to beat the enemy. This is where my model comes in.
 
-Based off of previous 2022 paper called [DraftRec]([url](https://arxiv.org/pdf/2204.12750)), I've rewritten the model updating all previous code as well as collected new data taking almost 6 months of time and over 50GB of space. 
+Based off of previous 2022 paper called [DraftRec]([url](https://arxiv.org/pdf/2204.12750)), I'm using their model as inspiration to create a similar model with some improvements. I'm still collecting data, but so far I've been collecting data for over 4 months using an EC2 instance hitting various Riot API endpoints.
 
-The outcome will be a new recommender system that takes into account enemy team's skill in addition to what it already accounts for. At the current time I'm training the DraftRec model to get baselines and will be enhancing the model after.
+With the data I currently have, I've been exploring how to create a model that can accurately predict the winner of a match given stats of all the players in the game from their previous games and the champions each team picked. I hope to use models like these to get a preliminary understanding of how each champion affects the probability of winning a given game.
+
+I either have made, am currently experimenting with, or plan to create the following models:
+1. Basic Classification Models (Decision Trees, Logistic Regression, SVMs, etc.)
+2. Basic Neural Networks (Feed Forward with Embeddings, One Hot Encodings, Increased Depth, etc.)
+3. Transformer Neural Network - Match Win Prediction
+4. Transformer Neural Network - Final Champion Selection Prediction
+5. Transformer Neural Network - Any Stage Champion Selection Prediction
+
+I'm currently working on both 1 and 2 to try and optimize the accuracy. Once I find that I can get a good enough accuracy with fairly basic models, I will move on to the Transformer based model to try and get more accuracy.
+
+The ultimate outcome will be a new recommender system that takes into account enemy team's skill in addition to what it already accounts for. If you have ideas on the project or questions please feel free to send me an email!
 
 <img src="images/Champ_Reco_league_Example.png?raw=true"/>
 <img src="images/Draft Rec Model.png?raw=true"/>
