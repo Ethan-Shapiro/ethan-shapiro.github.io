@@ -42,7 +42,7 @@ For more details, refer to the PowerPoint! 🚀
 
 
 ![Open Code](https://img.shields.io/badge/Jupyter-Open_Files-red?logo=Jupyter)](https://github.com/m-carini/m-carini.github.io/tree/main/netflix)
-![Open Slides](https://img.shields.io/badge/PPT-View_Slides-red?logo=microsoftpowerpoint)](docs/LoLMatchPrediction.pdf)
+![Open Slides](https://img.shields.io/badge/PPT-View_Slides-red?logo=microsoftpowerpoint)](pdf/LoLMatchPrediction.pdf)
 
 ---
 ### Steam Review Sentiment Analysis (Big Data)
