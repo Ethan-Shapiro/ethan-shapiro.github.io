@@ -2,31 +2,44 @@
 
 ---
 
-### League of Legends Champion Recommendation Engine
+# League of Legends Match Outcome Prediction  
 
-**Project overview:** As someone who has consistently struggled to make it past Diamond despite playing League of Legends for multiple years, I think it's time to see if I can get a leg up on the enemy team. One of the major ways to easily lose the game before it starts is to draft a bad team composition. If you're unfamiliar with League of Legends, it's essentially a game where two teams of 5 face off against each other with the objective of breaking into the other teams home and destroying it. I might have made it sound worse than it actually is... In any case, before the game actually starts each team gets to choose 5 characters out of over 160 and ban (not allow) the enemy team to choose 5. In total, that's 10 chosen champions with 10 banned champions, leaving over 150 champions to choose from (that's over 590 million different combinations of teams!) With so many choices, it's hard to always pick the right 5 in order to beat the enemy. This is where my model comes in.
+## **Project Overview**  
+Predicting the outcome of a **League of Legends** match before it starts is a challenging problem. The goal is to analyze player and champion statistics to determine **win probabilities** and understand the key factors that contribute to a team's success.  
 
-Based off of previous 2022 paper called [DraftRec]([url](https://arxiv.org/pdf/2204.12750)), I'm using their model as inspiration to create a similar model with some improvements. I'm still collecting data, but so far I've been collecting data for over 4 months using an EC2 instance hitting various Riot API endpoints.
+This project would be a first stpe to improving **matchmaking balance**, which in turn can give a more enjoyable player experience by making games feel more competitive. This project was inspired by the **DraftRec** paper ([DraftRec](https://arxiv.org/pdf/2204.12750)), but with modifications tailored to win prediction rather than draft recommendations.
 
-With the data I currently have, I've been exploring how to create a model that can accurately predict the winner of a match given stats of all the players in the game from their previous games and the champions each team picked. I hope to use models like these to get a preliminary understanding of how each champion affects the probability of winning a given game.
+## **Dataset Overview**  
+- **Match History Data**: 400,000+ matches, focusing on player picks, bans, and game results.  
+- **Player Performance Data**: 12M+ matches, capturing in-game stats like kills, deaths, and gold earned.  
+- **Feature Engineering**: Normalization, Z-scoring, and role-based differences to improve model predictions.  
 
-I either have made, am currently experimenting with, or plan to create the following models:
-1. Basic Classification Models (Decision Trees, Logistic Regression, SVMs, etc.)
-2. Basic Neural Networks (Feed Forward with Embeddings, One Hot Encodings, Increased Depth, etc.)
-3. Transformer Neural Network - Match Win Prediction
-4. Transformer Neural Network - Final Champion Selection Prediction
-5. Transformer Neural Network - Any Stage Champion Selection Prediction
+## **Best Performing Models**  
+### **1️⃣ Logistic Regression (Baseline Model)**  
+- **Accuracy: 56.04%**  
+- Performed better than more complex models like **Random Forest** and **XGBoost**, suggesting strong **linear relationships** in the data.  
 
-I'm currently working on both 1 and 2 to try and optimize the accuracy. Once I find that I can get a good enough accuracy with fairly basic models, I will move on to the Transformer based model to try and get more accuracy.
+### **2️⃣ Final Hybrid Neural Network**  
+- **Accuracy: 57.34%**  
+- Combined a **deep learning component** (role-based strength modeling) with a **linear component** (team stat differences), outperforming both methods individually.  
 
-The ultimate outcome will be a new recommender system that takes into account enemy team's skill in addition to what it already accounts for. If you have ideas on the project or questions please feel free to send me an email!
+## **Key Findings**  
+✅ **Linear relationships matter** – Logistic Regression outperformed many non-linear models.  
+✅ **Role-based skill differences are important** – Player strength in specific roles significantly impacts outcomes.  
+✅ **More complexity isn't always better** – The most complex transformer models underperformed.  
+✅ **Hybrid models are effective** – Combining neural networks with traditional models improved accuracy.  
 
-<img src="images/Champ_Reco_league_Example.png?raw=true"/>
-<img src="images/Draft Rec Model.png?raw=true"/>
+## **Lessons Learned**  
+🔹 **Start simple** – Establishing a baseline made it easier to measure real improvements.  
+🔹 **Plan data collection carefully** – Fetching match history **scaled exponentially**, making early prototyping crucial.  
+🔹 **Evaluate models beyond a single metric** – Looking at raw precision, recall, and accuracy helped identify true performance gains.  
 
-***Technical Knowledge:*** Transformer Networks, Neural Networks, Data Cleaning, Feature Engineering
+## **Technical Knowledge & Tools**  
+✅ **Technical Skills**: Machine Learning, Neural Networks, Data Cleaning, Feature Engineering  
+✅ **Tools Used**: Python, PyTorch, Riot API, AWS EC2, Scikit-Learn  
 
-***Tools:*** Python, PyTorch, AWS EC2
+For more details, refer to the PowerPoint! 🚀  
+
 
 ![Open Code](https://img.shields.io/badge/Jupyter-Open_Files-red?logo=Jupyter)](https://github.com/m-carini/m-carini.github.io/tree/main/netflix)
 ![Open Slides](https://img.shields.io/badge/PPT-View_Slides-red?logo=microsoftpowerpoint)](docs/Netflix_Presentation_Notes.pptx)
