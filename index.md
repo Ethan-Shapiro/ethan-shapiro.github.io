@@ -41,8 +41,8 @@ This project would be a first stpe to improving **matchmaking balance**, which i
 For more details, refer to the PowerPoint! 🚀  
 
 
-![Open Code](https://img.shields.io/badge/Jupyter-Open_Files-red?logo=Jupyter)](https://github.com/m-carini/m-carini.github.io/tree/main/netflix)
-![Open Slides](https://img.shields.io/badge/PPT-View_Slides-red?logo=microsoftpowerpoint)](pdf/LoLMatchPrediction.pdf)
+[![Open Code](https://img.shields.io/badge/Jupyter-Open_Files-red?logo=Jupyter)](https://github.com/Ethan-Shapiro/SteamReviewSentiment)
+[![Open Slides](https://img.shields.io/badge/PPT-View_Slides-red?logo=microsoftpowerpoint)](pdf/LoLMatchPrediction.pdf)
 
 ---
 ### Steam Review Sentiment Analysis (Big Data)
