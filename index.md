@@ -5,9 +5,9 @@
 # League of Legends Match Outcome Prediction  
 
 ## **Project Overview**  
-I'd love to work on matchmaking optimization! I think almost any player has played a match where it just felt like a loss (or even a win) was an absolute stomp. This project is inspiried by my desire to move one step closer to finding a better matchmaking balancing. Predicting the outcome of a **League of Legends** match before it starts is a challenging problem. My goal was to analyze player and champion statistics to determine **win probabilities** and understand factors that contribute to a team's success.
+We’ve all had those games where a loss felt completely out of our control. Sometimes even an easy win isn't satisfying, and that frustration is what inspired me to take a step toward better matchmaking balance. To predict the outcome of a League of Legends match before it starts, I analyzed player and champion stats to calculate win probabilities and identify the key factors that contribute to a team’s success.
 
-This project would be a first step to improving **matchmaking balance**, which in turn can give a more enjoyable player experience by making games feel more competitive. This project was inspired by the **DraftRec** paper ([DraftRec](https://arxiv.org/pdf/2204.12750)), which included the current best match prediction mode, but with modifications tailored to win prediction rather than draft recommendations.
+This project would be a first step to introducing machine learning enhanced **matchmaking balance**, which in turn can give a more enjoyable player experience by making games feel more competitive. This project was also inspired by the **DraftRec** paper ([DraftRec](https://arxiv.org/pdf/2204.12750)), which included the current best match prediction mode, but with modifications tailored to win prediction rather than draft recommendations.
 
 ## **Dataset Overview**  
 - **Match History Data**: 400,000+ matches, focusing on player picks, bans, and game results.  
