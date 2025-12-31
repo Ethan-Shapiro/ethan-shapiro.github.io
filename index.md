@@ -82,6 +82,6 @@ Developed a CRUD backend in Go to handle API requests between the frontend and p
 
 **Technical Skills & Tools**  
 **Skills**: Full-Stack Development, Machine Learning Deployment, API Development, Data Collection, Testing & QA  
-**Tools**: Python, PyTorch, AWS Lambda, Firebase, Next.js, Go, Cypress, PyTest, Google Cloud Run, Riot API
+**Tools**: Python, PyTorch, AWS Lambda, AWS S3, Firebase, Next.js, Go, Cypress, PyTest, Google Cloud Run, Riot API
 
 ---
